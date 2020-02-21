@@ -1,0 +1,121 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Custom styles below */
+
+/* Using an Augmented Fourth modular scale:
+* https://www.modularscale.com/?1.5&em&1.414
+*/
+
+/* Base Styles */
+
+html {
+  color: #0f0f0f; /* Near black */
+  font-family: "Roboto", "Comic Sans MS", cursive, sans-serif;
+  font-size: 1em; /* Fallback font-size for calc() */
+  font-size: calc(0.875em + (1.625 - 0.875) *(100vw - 18.75em)/81.25);
+  /*14 / 16 = 0.875 ; 26 / 16 = 1.625 ; 300 / 16 = 18.75 ; 1300 / 16 = 81.25*/
+  line-height: 1.2em; /* Fallback line-height for calc() */
+  line-height: calc(1.0625em + (2 - 1.0625) * (100vw - 18.75em)/81.25);
+  /*17 / 16 = 1.0625 ; 32 / 16 = 2 */
+}
+
+body {
+  background-color: #ffe0b3;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2.827em; /* Fallback font-size for calc() */
+  font-size: calc(1.999em + (4.241 - 1.999) *(100vw - 18.75em)/81.25);
+  /*14 / 16 = 0.875 ; 26 / 16 = 1.625 ; 300 / 16 = 18.75 ; 1300 / 16 = 81.25*/
+  line-height: 1em;
+  margin-bottom: 0.265em;
+  /*margin-left: 2.6em;
+  margin-left: calc(2.6em + (0.177)*(100vw - 18.75em)/81.25);*/
+  text-align: center;
+}
+
+h2 {
+  /*font-size: 1.999em; /* Fallback font-size for calc() */
+  font-size: calc(1.414em + (2.999 - 1.414)*(100vw - 18.75em)/81.25);
+  /*14 / 16 = 0.875 ; 26 / 16 = 1.625 ; 300 / 16 = 18.75 ; 1300 / 16 = 81.25*/
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.414em; /* Fallback font-size for calc() */
+  font-size: calc(1.414em + (2.121 - 1.414) *(100vw - 18.75em)/81.25);
+  /*14 / 16 = 0.875 ; 26 / 16 = 1.625 ; 300 / 16 = 18.75 ; 1300 / 16 = 81.25*/
+  margin-left: 0;
+  text-align: left;
+}
+
+nav {
+  border-bottom: 0.265em dashed #0f0f0f; /* Near black */
+  border-top: 0.265em dashed #0f0f0f; /* Near black */
+  padding-bottom: 1.061em;
+  padding-left: 1.414em;
+  padding-top: 0.707em;
+}
+
+section {
+  margin-top: 1.061em;
+  padding-left: 1.414em;
+  padding-bottom: 0.707em;
+  border-bottom: 0.188em solid #0f0f0f; /* Near black */
+}
+
+p {
+  margin-top: 0.707em;
+}
+
+footer {
+  font-size: 0.707em; /* Fallback font-size for calc() */
+  font-size: calc(0.5em + (0.75 - 0.5) *(100vw - 18.75em)/81.25);
+  /*14 / 16 = 0.875 ; 26 / 16 = 1.625 ; 300 / 16 = 18.75 ; 1300 / 16 = 81.25*/
+  padding-left: 2.5em;
+  line-height: 1.414em;
+  margin-bottom: 1.414em;
+  margin-top: 1.414em;
+}
+
+.header-photo {
+  margin-bottom: 0.5em;
+  border-top: 0.707em double #0f0f0f; /* Near black */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#power-pic {
+  max-width: 100%;
+}
+
+.header-photo figcaption {
+  /* Use to visually conceal the caption*/
+  position: absolute;
+  left: -10000px;
+}
+
+.header-bar {
+  display: block;
+}
+
+#logo-ace {
+  float: left;
+  padding: 0.5em;
+  max-width: 6.5em;
+  max-width: calc(1.999em + (6.5 - 1.999) *(100vw - 18.75em)/81.25);
+}
+
+#logo-emmanuel {
+  float: right;
+  padding: 0.5em;
+  max-width: 6.5em;
+  max-width: calc(1.999em + (6.5 - 1.999) *(100vw - 18.75em)/81.25);
+}
